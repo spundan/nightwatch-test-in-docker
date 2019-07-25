@@ -1,0 +1,29 @@
+{
+  "name": "nightwatch-example",
+  "version": "1.0.0",
+  "description": "Nightwatch example",
+  "main": "index.js",
+  "scripts": {
+    "test": "nightwatch",
+    "test:chrome": "npm test -- --env chrome",
+    "test:firefox": "npm test -- --env firefox",
+    "debug": "node --inspect-brk node_modules/nightwatch/bin/runner.js --env chrome"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mucsi96/nightwatch-example.git"
+  },
+  "author": "Igor Mucsicska <mucsi_96@yahoo.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mucsi96/nightwatch-example/issues"
+  },
+  "homepage": "https://github.com/mucsi96/nightwatch-example#readme",
+  "devDependencies": {
+    "chromedriver": "^75.1.0",
+    "nightwatch": "^1.1.13"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.499.0"
+  }
+}
