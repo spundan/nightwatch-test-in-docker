@@ -4,7 +4,6 @@ RUN apt-get update && \
     curl -sL https://deb.nodesource.com/setup_10.x | bash - && \
     apt-get --no-install-recommends install -y nodejs && \
     apt-get -y remove curl && \
-    apt-get -y clean && \
     nodejs --version && npm --version
 COPY ./ /work
 WORKDIR /work
